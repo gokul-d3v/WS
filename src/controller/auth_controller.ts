@@ -116,8 +116,6 @@ export const superAdminLogin = async (
       password: password,
     });
 
-    console.log(isExist);
-
     if (!isExist) {
       res.status(404).json({ message: "Super Admin not found" });
       return;
